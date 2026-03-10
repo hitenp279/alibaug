@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Beach Challenge</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>Aboddesy Challenge</h1>
+
+<div class="rules-card">
+
+<h2>Game Rules</h2>
+
+<ul>
+
+<li>No cheating. Tasks must be completed honestly.</li>
+
+<li>Proof (photo/video) must be shown when required.</li>
+
+<li>Teams cannot press "Done" unless the task is fully completed.</li>
+
+<li>After reaching <strong>30 points</strong>, contact the host.</li>
+
+<li>First team to reach <strong>69 points</strong> wins.</li>
+
+</ul>
+
+</div>
+
+<div class="scoreboard">
+
+<div class="team">
+<h2>Team 1</h2>
+<p id="score1">0</p>
+</div>
+
+<div class="team">
+<h2>Team 2</h2>
+<p id="score2">0</p>
+</div>
+
+</div>
+
+<div class="progress-container">
+<div id="progress-bar"></div>
+</div>
+
+<div id="tasks"></div>
+
+
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-database-compat.js"></script>
+
+<script>
+
+const firebaseConfig = {
+  apiKey: "AIzaSyASzw3Grd9_qq_LLiZsgOzLmzgWI9Ak2lA",
+  authDomain: "alibaug-d3559.firebaseapp.com",
+  databaseURL: "https://alibaug-d3559-default-rtdb.firebaseio.com",
+  projectId: "alibaug-d3559",
+  storageBucket: "alibaug-d3559.firebasestorage.app",
+  messagingSenderId: "1041113673114",
+  appId: "1:1041113673114:web:0ab7b082c96c72e7aade23"
+};
+
+firebase.initializeApp(firebaseConfig);
+const db = firebase.database();
+
+</script>
+
+<script src="script.js"></script>
+
+</body>
+</html>
